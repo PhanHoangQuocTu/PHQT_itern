@@ -1,0 +1,280 @@
+.wrapper {
+  min-width: 100%;
+  min-height: 440px;
+  background-color: #000;
+}
+
+.noHover {
+  cursor: default;
+  opacity: 1;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+.main {
+  display: flex;
+  gap: 87px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.content {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content:nth-child(1) {
+  max-width: 20%;
+  min-width: 18.5%;
+}
+
+.content:nth-child(2) {
+  max-width: 15%;
+}
+
+.content:nth-child(3) {
+  min-width: 10.5%;
+  max-width: 15%;
+}
+
+.content:nth-child(4) {
+  min-width: 11%;
+  max-width: 15%;
+}
+
+.content:nth-child(5) {
+  min-width: 18%;
+  max-width: 20%;
+}
+
+.headingLg {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fafafa;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fafafa;
+}
+
+.contentText {
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+
+.contentTextItem {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .DownloadAppText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fafafa;
+    opacity: 0.7;
+  }
+
+  .contentTextLink {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fafafa;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .subcribeText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fafafa;
+  }
+}
+
+.subcribeItem {
+  margin-bottom: 22px;
+  margin-top: 3px;
+}
+
+.contentInputItem {
+  display: flex;
+  position: relative;
+  margin-top: 2px;
+}
+
+.contentInput {
+  min-width: 100%;
+  padding: 10px 40px 12px 16px;
+  background-color: #000;
+  border: 1.5px solid #fafafa;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.sendIconWrapper {
+  position: absolute;
+}
+
+.sendIcon {
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 15px;
+  bottom: 12px;
+}
+
+.sendIcon:hover {
+  opacity: 0.7;
+}
+
+.downloadAppImg {
+  display: flex;
+  gap: 11px;
+}
+
+.downloadAppLink {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.copyright {
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #757575;
+  }
+}
+
+.contentIconSocial {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.copyrightIcon {
+  color: #757575;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content:nth-child(1) {
+    min-width: 40%;
+    max-width: 50%;
+  }
+
+  .content:nth-child(2) {
+    min-width: 40%;
+    max-width: 50%;
+  }
+
+  .content:nth-child(3) {
+    min-width: 25%;
+    max-width: 30%;
+  }
+
+  .content:nth-child(4) {
+    min-width: 25%;
+    max-width: 30%;
+  }
+
+  .content:nth-child(5) {
+    min-width: 25%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content:nth-child(1) {
+    min-width: 100%;
+  }
+
+  .content:nth-child(2) {
+    min-width: 100%;
+  }
+
+  .content:nth-child(3) {
+    min-width: 100%;
+  }
+
+  .content:nth-child(4) {
+    min-width: 100%;
+  }
+
+  .content:nth-child(5) {
+    min-width: 100%;
+  }
+
+  .headingLg {
+    text-align: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .contentTextItem {
+    text-align: center;
+  }
+
+  .downloadAppImg {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .main {
+    gap: 20px;
+  }
+
+  .DownloadAppText {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    span {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+}

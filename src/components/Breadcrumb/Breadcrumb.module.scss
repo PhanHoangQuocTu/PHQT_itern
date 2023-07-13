@@ -1,0 +1,39 @@
+.wrapper {
+  width: 100%;
+}
+
+.link {
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.5;
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  &:last-child {
+    opacity: 1;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &:last-child::after {
+    content: '';
+  }
+
+  &::after {
+    content: '/';
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  &:hover::after {
+    color: #000;
+    text-decoration: none;
+  }
+}

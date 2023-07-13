@@ -1,0 +1,147 @@
+.card-bs {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .add-card {
+    opacity: 0;
+    width: 100%;
+    height: 41px;
+    background-color: #000;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(50%);
+    transition: transform 0.1s linear;
+
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+
+  .image {
+    position: relative;
+    min-width: 270px;
+    min-height: 250px;
+    &:hover .add-card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .image-clothes {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .icon-wrapper {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+
+    .heart-small-icon {
+      width: 34px;
+      height: 34px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+
+      &:hover .card-icon {
+        fill: red;
+      }
+    }
+
+    .quick-view-icon {
+      width: 34px;
+      height: 34px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover .card-icon {
+        fill: #ccc;
+      }
+    }
+  }
+
+  .description {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+
+    .price-sale {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #db4444;
+    }
+
+    .price-default {
+      text-decoration: line-through;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000 !important;
+      opacity: 0.5;
+    }
+  }
+
+  .rate {
+    display: flex;
+
+    .star-bs {
+      display: flex;
+
+      & > .star {
+        width: 20px;
+        height: 20px;
+        margin: 0 !important;
+      }
+    }
+  }
+
+  .count {
+    margin-left: 8px;
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+}

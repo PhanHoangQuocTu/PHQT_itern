@@ -1,0 +1,52 @@
+.wrapper {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.wishlistHeading {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wishlistHeadingText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.wishlistHeadingBtn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 16px 48px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.wishlistList {
+  margin-top: 60px;
+  display: flex;
+}
+
+.swiperContainer {
+  flex: 1;
+}
+
+@media (max-width: 568px) {
+  .wishlistHeading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

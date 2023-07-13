@@ -1,0 +1,174 @@
+.wrapper {
+  width: 100%;
+}
+
+.heading {
+  width: 100%;
+  padding: 24px 40px;
+  background-color: #fff;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.headingText {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.list {
+  width: 100%;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.btnTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnTableLink {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 16px 48px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    text-decoration: none;
+    color: #ccc;
+  }
+}
+
+.checkout {
+  margin: 80px 0 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coupon {
+  display: flex;
+  align-self: flex-start;
+  gap: 16px;
+}
+
+.couponInput {
+  min-width: 300px;
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+.couponBtn {
+  padding: 16px 48px;
+  border-radius: 4px;
+  background: var(--button-2, #db4444);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  border-radius: 4px;
+  border: 1.5px solid #000;
+}
+
+.totalTitle {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.totalBody {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #000;
+
+  &:last-child {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.totalName {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.totalPrice {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.totalBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalBtnLink {
+  text-decoration: none;
+  border-radius: 4px;
+  background: var(--button-2, #db4444);
+  color: #fafafa;
+  padding: 16px 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 576px) {
+  .coupon {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    padding: 0;
+  }
+
+  .btnTableLink {
+    padding: 8px 16px;
+  }
+
+  .coupon {
+    flex-direction: column;
+  }
+
+  .checkout {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

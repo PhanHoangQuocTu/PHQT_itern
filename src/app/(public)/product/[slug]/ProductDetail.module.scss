@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail {
+  margin-bottom: 140px;
+}
+
+.related {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.block {
+  width: 20px;
+  height: 40px;
+  background-color: #db4444;
+}
+
+.text {
+  color: #db4444;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.list {
+  margin-bottom: 140px;
+}

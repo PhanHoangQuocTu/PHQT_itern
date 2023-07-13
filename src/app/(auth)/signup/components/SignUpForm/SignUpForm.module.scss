@@ -1,0 +1,88 @@
+.wrapper {
+  min-width: 370px;
+}
+
+.signUpFormInput {
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+  outline: none;
+}
+
+.SignUpFormSubmitBtn {
+  width: 100%;
+  padding: 16px 0 16px 0;
+  background-color: #db4444;
+  border-radius: 4px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fafafa;
+}
+
+.SignUpFormSubmitBtn:hover {
+  opacity: 0.8;
+}
+
+.SignUpFormGoogleBtn {
+  width: 100%;
+  padding: 16px 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.SignUpFormGoogleBtn:hover {
+  opacity: 0.8;
+}
+
+.googleIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.googleBtnText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.haveAccount {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.haveAccountText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.7;
+  margin-right: 16px;
+}
+
+.haveAccountLink {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media (max-width: 568px) {
+  .wrapper {
+    min-width: 300px;
+  }
+}

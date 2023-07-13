@@ -1,0 +1,48 @@
+.wrapper {
+  min-width: 370px;
+}
+
+.signInFormInput {
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+  outline: none;
+}
+
+.SignInFormBtnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SignInFormSubmitBtn {
+  padding: 16px 48px;
+  background-color: #db4444;
+  border-radius: 4px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fafafa;
+}
+
+.SignInFormSubmitBtn:hover {
+  opacity: 0.8;
+}
+
+.SignInFormForgotPass {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #db4444;
+}
+
+@media (max-width: 568px) {
+  .wrapper {
+    min-width: 300px;
+  }
+}

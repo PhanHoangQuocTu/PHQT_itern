@@ -1,0 +1,145 @@
+.disabled {
+  background-color: #ccc !important;
+  opacity: 0.3 !important;
+  cursor: default !important;
+
+  &:hover {
+    cursor: default !important;
+    background-color: #ccc !important;
+    opacity: 0.3 !important;
+  }
+}
+
+.ourproduct-wrapper {
+  padding-top: 71px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  display: flex;
+  flex-direction: column;
+
+  .today {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .block {
+      width: 20px;
+      height: 40px;
+      background-color: #db4444;
+      border-radius: 4px;
+    }
+
+    span {
+      color: #db4444;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .outproduct-control-swiper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 87px;
+    margin-top: 20px;
+    h1 {
+      margin: 0 !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 0.04em;
+      color: #000;
+    }
+  }
+
+  .btn-swiper {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 0;
+  }
+
+  .btn-control-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+  }
+
+  .btn-control-swiper:hover {
+    background-color: #ccc;
+    opacity: 0.8;
+  }
+
+  .arrow-left-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .arrow-right-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .product {
+    margin-top: 60px;
+    .swiper-wrapper {
+      flex-direction: row !important;
+    }
+    .swiper-slide {
+      min-height: auto !important;
+      height: auto !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .view-all-product {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .view-all-product__btn {
+    background-color: #db4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    a {
+      text-decoration: none;
+      color: #fafafa;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ourproduct-wrapper {
+    .outproduct-control-swiper {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn-swiper {
+      position: relative;
+    }
+  }
+}
